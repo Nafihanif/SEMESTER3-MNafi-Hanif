@@ -20,7 +20,7 @@ public class barang {
 
     public static void main(String[] args) {
         barang barang1 = new barang();
-        barang1.kodeBarang = "Kopdes-001";
+        barang1.kodeBarang = "KPD-001";
         barang1.namaBarang = "Laptop";
         barang1.hargaDasar = 10000000;
         barang1.diskon = 0.1f;
