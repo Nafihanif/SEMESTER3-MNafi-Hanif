@@ -11,6 +11,5 @@ public class Tesbuah {
         Ilham.MakanBuah(mygedang);
         Ilham.MakanBuah(myApel);
         Ilham.MakanBuah(myDuren);
-
     }
 }

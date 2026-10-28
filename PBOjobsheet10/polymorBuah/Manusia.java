@@ -16,5 +16,6 @@ public class Manusia {
         }
         
         System.out.println("Rasanya " + x.Rasa);
+        System.out.println("Water kapasistas " + x.Water);
     }
 }
