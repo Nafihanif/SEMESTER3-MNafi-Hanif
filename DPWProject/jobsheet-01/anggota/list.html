@@ -1,47 +1,69 @@
- <header> 
-         <h1>SIMPUS-Mini</h1> 
-         <nav> 
-             <ul>
-                <li><a href="../index.html">Home</a></li> 
-                <li><a href="../buku/list.html">List of Books</a></li> 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member List - SIMPUS-Mini</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>SIMPUS-Mini</h1>
+        <!-- GANTI KODE HAMBURGER LAMA DENGAN INI -->
+        <button type="button" id="nav-toggle-btn" class="nav-toggle-label" aria-label="Menu">&#9776;</button>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../buku/list.html">List of Books</a></li>
                 <li><a href="../buku/tambah.html">Add Books</a></li>
-                <li><a href="list.html">Member List</a></li> 
-                <li><a href="tambah.html">Add Members</a></li> 
-             </ul> 
-         </nav> 
+                <li><a href="list.html">Member List</a></li>
+                <li><a href="tambah.html">Add Members</a></li>
+            </ul>
+        </nav>
+        <button type="button" class="btn-hapus">Hapus</button>
     </header>
-<table> 
-    <thead> 
-        <tr> 
-            <th>Member No</th> 
-            <th>Name</th> 
-            <th>Address</th> 
-            <th>No. HP</th> 
-            <th>Date Joined</th>
-            <th>Aksi</th> 
-        </tr> 
-    </thead> 
-    <tbody> 
-        <tr> 
-            <td>A001</td> 
-            <td>Siti Aminah</td> 
-            <td>Malang</td> 
-            <td>0812xxxx</td> 
-            <td>2026-01-15</td>
-            <td>
-                <button type="button">Edit</button> 
-                <button type="button">Delete</button>
-            </td> 
-        </tr> 
-        <tr> 
-            <td>A002</td> 
-            <td>Budi Santoso</td> 
-            <td>Batu</td> 
-            <td>0813xxxx</td> 
-            <td> 
-                 < button type="button">Edit</button> 
-                 <button type="button">Delete</button> 
-            </td> 
-        </tr> 
-    </tbody>
-</table>
+
+    <main>
+        <section>
+            <h2>Daftar Anggota</h2>
+            <div class="table-responsive">
+                <div class="search-box">
+                <label for="search-input">Cari Data</label>
+                <input type="text" id="search-input" placeholder="Ketik kata kunci...">
+                </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No Anggota</th>
+                        <th>Nama</th>
+                        <th>Alamat</th>
+                        <th>No Telepon</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>A001</td>
+                        <td>Siti Aminah</td>
+                        <td>Malang</td>
+                        <td>081234567890</td>
+                    </tr>
+                    <tr>
+                        <td>A002</td>
+                        <td>Rudi Hermawan</td>
+                        <td>Surabaya</td>
+                        <td>089876543210</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SIMPUS-Mini. All rights reserved.</p>
+    </footer>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

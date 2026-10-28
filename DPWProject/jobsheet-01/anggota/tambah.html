@@ -1,42 +1,63 @@
-<header> 
-         <h1>SIMPUS-Mini</h1> 
-         <nav> 
-             <ul>
-                <li><a href="../index.html">Home</a></li> 
-                <li><a href="../buku/list.html">List of Books</a></li> 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Members - SIMPUS-Mini</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>SIMPUS-Mini</h1>
+        <!-- GANTI KODE HAMBURGER LAMA DENGAN INI -->
+        <button type="button" id="nav-toggle-btn" class="nav-toggle-label" aria-label="Menu">&#9776;</button>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../buku/list.html">List of Books</a></li>
                 <li><a href="../buku/tambah.html">Add Books</a></li>
-                <li><a href="list.html">Member List</a></li> 
-                <li><a href="tambah.html">Add Members</a></li> 
-             </ul> 
-         </nav> 
+                <li><a href="list.html">Member List</a></li>
+                <li><a href="tambah.html">Add Members</a></li>
+            </ul>
+        </nav>
     </header>
-<form> 
-    <p> 
-        <label for="name">Name</label><br> 
-        <input type="text" id="name" name="name" required> 
-    </p>
 
-    <p>
-        <label for="no_anggota">Member No</label><br> 
-        <input type="text" id="no_anggota" name="no_anggota" required> 
-    </p>
+    <main>
+        <section>
+            <h2>Tambah Anggota Baru</h2>
+            <form id="form-tambah" action="" method="post">
+                <p>
+                    <label for="member_no">Nomor Anggota</label><br>
+                    <input type="text" id="member_no" name="member_no" required>
+                </p>
 
-    <p> 
-        <label for="address">Address</label><br> 
-        <input type="text" id="address" name="address"> 
-    </p>
+                <p>
+                    <label for="name">Nama Lengkap</label><br>
+                    <input type="text" id="name" name="name" required>
+                </p>
 
-    <p> 
-        <label for="no_hp">No. HP</label><br> 
-        <input type="text" id="no_hp" name="no_hp"> 
-    </p>
+                <p>
+                    <label for="address">Alamat</label><br>
+                    <textarea id="address" name="address" rows="3"></textarea>
+                </p>
 
-    <p>
-        <label for="email">Email</label><br>
-        <input type="email" id="email" name="email" required>
-    </p>
+                <p>
+                    <label for="phone">Nomor Telepon</label><br>
+                    <input type="tel" id="phone" name="phone">
+                </p>
 
-    <p> 
-        <button type="submit">Save</button> 
-    </p>
-</form>
+                <p style="margin-top: 1rem;">
+                    <button type="submit">Simpan Anggota</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SIMPUS-Mini. All rights reserved.</p>
+    </footer>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

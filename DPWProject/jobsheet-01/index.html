@@ -1,48 +1,39 @@
-<! DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
-<head> 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIMPUS-Mini | Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body> 
-    <header> 
-         <h1>SIMPUS-Mini</h1> 
-         <nav> 
-             <ul>
-                <li><a href="index.html">Home</a></li> 
-                <li><a href="buku/list.html">List of Books</a></li> 
+<body>
+
+    <header>
+        <h1>SIMPUS-Mini</h1>
+        <!-- GANTI KODE HAMBURGER LAMA DENGAN INI -->
+        <button type="button" id="nav-toggle-btn" class="nav-toggle-label" aria-label="Menu">&#9776;</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buku/list.html">List of Books</a></li>
                 <li><a href="buku/tambah.html">Add Books</a></li>
-                <li><a href="anggota/list.html">Member List</a></li> 
-                <li><a href="anggota/tambah.html">Add Members</a></li> 
-             </ul> 
-         </nav> 
+                <li><a href="anggota/list.html">Member List</a></li>
+                <li><a href="anggota/tambah.html">Add Members</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main> 
-         <section> 
-            <h2>Welcome to the Mini</h2 Library System>
-            <p>A simple application for managing library book and member data.</p> 
-         </section>
-
-        <section> 
-            <h2>Summary</h2> 
-            <article> 
-                 <h3>Total Books</h3> 
-                 <p>3</p> 
-            </article> 
-            <article> 
-                 <h3>Total Members</h3> 
-                 <p>2</p> 
-            </article> 
-            <article> 
-                 <h3>Currently Borrowed</h3> 
-                 <p>3</p> 
-            </article> 
+    <main>
+        <section>
+            <h2>Selamat Datang di SIMPUS-Mini</h2>
+            <p>Sistem Informasi Perpustakaan Sederhana untuk mengelola data buku dan anggota perpustakaan.</p>
         </section>
     </main>
 
-    <footer> 
-        <p> © 2026 SIMPUS-Mini — Jobsheet 1</p> 
+    <footer>
+        <p>&copy; 2026 SIMPUS-Mini. All rights reserved.</p>
     </footer>
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
