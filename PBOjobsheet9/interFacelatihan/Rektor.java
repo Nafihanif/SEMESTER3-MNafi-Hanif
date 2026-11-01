@@ -1,4 +1,4 @@
-package interFacelatihan;
+package interfacelatihan;
 
 public class Rektor {
     public void beriSertifikatCumlaude(ICumlaude mahasiswCumlaude){
@@ -9,5 +9,14 @@ public class Rektor {
         mahasiswCumlaude.meraihIPKTinggi();
 
         System.out.println("-------------------------------------------------");
+    }
+    public void berisertifikatMawapres(IBerprestasi mahasiswaBerprestasi){
+        System.out.println("I am the RECTOR, granting a MAWAPRES award.");
+        System.out.println("Congratulations! How did you achieve this?");
+
+        mahasiswaBerprestasi.menjuaraiKompetisi();
+        mahasiswaBerprestasi.membuatPublikasiIlmiah();
+
+        System.out.println("-------------------------------------------");
     }
 }

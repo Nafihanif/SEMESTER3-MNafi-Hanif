@@ -1,4 +1,4 @@
-package interFacelatihan;
+package interfacelatihan;
 
 public class Program {
     public static void main(String[] args){
@@ -9,7 +9,10 @@ public class Program {
         PascaSarjana masterCumlaude = new PascaSarjana("Elok");
 
         //pakRektor.beriSertifikatCumlaude(mhsBiasa);
-        pakRektor.beriSertifikatCumlaude(sarjanaCumlaude);
-        pakRektor.beriSertifikatCumlaude(masterCumlaude);
+        // pakRektor.beriSertifikatCumlaude(sarjanaCumlaude);
+        // pakRektor.beriSertifikatCumlaude(masterCumlaude);
+
+        pakRektor.berisertifikatMawapres(sarjanaCumlaude);
+        pakRektor.berisertifikatMawapres(masterCumlaude);
     }
 }

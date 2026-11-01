@@ -1,4 +1,4 @@
-package interFacelatihan;
+package interfacelatihan;
 
 public class Mahasiswa implements ICumlaude {
     protected String nama;

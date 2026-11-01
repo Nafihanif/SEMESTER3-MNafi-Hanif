@@ -1,4 +1,4 @@
-package interFacelatihan;
+package interfacelatihan;
 
 public interface ICumlaude {
     public abstract void lulus();
